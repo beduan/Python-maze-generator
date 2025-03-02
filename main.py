@@ -7,7 +7,6 @@ HEIGHT_WINDOW = 700
 width_maze_surface = 600
 height_maze_surface = 600
 
-
 class MazeGenerator:
     def __init__(self, root):
         self.root = root
