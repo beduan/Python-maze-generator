@@ -75,6 +75,7 @@ class MazeGenerator:
             self.label_color_wall.config(text=f'Color walls: #{self.color_wall[0]:02X}{self.color_wall[1]:02X}{self.color_wall[2]:02X}', fg=f'#{self.color_wall[0]:02X}{self.color_wall[1]:02X}{self.color_wall[2]:02X}')
     
     def new_maze(self):
+        self.init_size()
         self.maze = self.maze_generation(self.count_x, self.count_y)
         self.draw()
 
